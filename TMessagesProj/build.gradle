@@ -24,7 +24,7 @@ android {
     buildToolsVersion '24.0.2'
 
     useLibrary 'org.apache.http.legacy'
-    defaultConfig.applicationId = "org.telegram.messenger"
+    defaultConfig.applicationId = "net.bluehack.messenger"
 
     sourceSets.main.jniLibs.srcDirs = ['./jni/']
 
@@ -41,7 +41,7 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file("config/release.keystore")
+            storeFile file("config/bluehack.jks")
             storePassword RELEASE_STORE_PASSWORD
             keyAlias RELEASE_KEY_ALIAS
             keyPassword RELEASE_KEY_PASSWORD
@@ -49,7 +49,7 @@ android {
         }
 
         release {
-            storeFile file("config/release.keystore")
+//            storeFile file("config/bluehack.jks")
             storePassword RELEASE_STORE_PASSWORD
             keyAlias RELEASE_KEY_ALIAS
             keyPassword RELEASE_KEY_PASSWORD
@@ -62,7 +62,7 @@ android {
             debuggable true
             jniDebuggable true
             signingConfig signingConfigs.debug
-            applicationIdSuffix ".beta"
+//            applicationIdSuffix ".beta"
         }
 
         release {

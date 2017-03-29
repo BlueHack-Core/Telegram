@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:578755981599:android:f6afd7b67eae3860",
         "android_client_info": {
-          "package_name": "org.telegram.messenger"
+          "package_name": "net.bluehack.messenger"
         }
       },
       "oauth_client": [
